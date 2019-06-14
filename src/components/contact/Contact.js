@@ -31,7 +31,7 @@ export default class Contact extends React.Component{
             message: this.state.message
         }
 
-        axios.post('API_URI', data)
+        axios.post('', data)
         .then( res => {
             this.setState({ sent: true }, this.resetForm());
             alert("thanks for contacting  us ");

@@ -297,6 +297,12 @@ background: url("../../src/static/products/1.jpg");
     height:150px
 }
 
+.img
+{
+    width:150px;
+    height:150px
+}
+
 .products .types h5
 {
     color:#75C400

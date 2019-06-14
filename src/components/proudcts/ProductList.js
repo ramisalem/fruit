@@ -1,7 +1,7 @@
 
 import React from 'react';
-
 import Product from './ProductItem';
+
 
 const ProductList = ({ products }) => {
   return products.map(p => {

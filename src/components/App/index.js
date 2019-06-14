@@ -7,7 +7,6 @@ import FloatCart from '../FloatCart';
 import Footer from '../footer/footer';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
-import Cart from '../FloatCart/index';
 import Slider from '../Slider/Slider';
 import Contact from '../contact/Contact';
 import Fruits from '../proudcts/index';
@@ -33,12 +32,12 @@ class App extends Component {
     <Slider />
     <Features />
     <About />
-        <main>
+     
           {/* <Shelf /> */}
           <Fruits />
-        </main>
+           
       
-        {/* <FloatCart /> */}
+        <FloatCart />
         <Contact />
         <Footer />
       </React.Fragment>

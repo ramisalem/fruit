@@ -15,6 +15,7 @@ export const productsAPI =
   "products": [
     {
       "id": 12,
+      "q": 1 ,
       "sku": "apple",
       "title": "Apple",
       "description": "4 MSL",
@@ -29,6 +30,7 @@ export const productsAPI =
 
     {
       "id": 13,
+      "q": 1 ,
       "sku": "orange",
       "title": "Orange",
       "description": "",
@@ -43,6 +45,7 @@ export const productsAPI =
 
     {
       "id": 14,
+      "q": 1 ,
       "sku": "mango",
       "title": "Mango",
       "description": "GPX Poly 1",
@@ -57,6 +60,7 @@ export const productsAPI =
 
     {
       "id": 15,
+      "q": 1 ,
       "sku": "apricot",
       "title": "Apricot",
       "description": "Treino 2014",
@@ -71,6 +75,7 @@ export const productsAPI =
 
     {
       "id": 11,
+      "q": 1 ,
       "sku": "avocado",
       "title": "Avocado",
       "description": "",
@@ -99,6 +104,7 @@ export const productsAPI =
 
     {
       "id": 0,
+      "q": 1 ,
       "sku": "blueberry",
       "title": "Blueberry",
       "description": "14/15 s/nº",
@@ -127,6 +133,7 @@ export const productsAPI =
 
     {
       "id": 2,
+      "q": 1 ,
       "sku": "coconut",
       "title": "Coconut",
       "description": "14/15 s/nº",
@@ -155,6 +162,7 @@ export const productsAPI =
 
     {
       "id": 4,
+      "q": 1 ,
       "sku": "peach",
       "title": "Peach",
       "description": "14/15 s/nº - Jogador",
@@ -183,6 +191,7 @@ export const productsAPI =
 
     {
       "id": 6,
+      "q": 1 ,
       "sku": "pineaple",
       "title": "Pineaple",
       "description": "Goleiro 13/14",
@@ -197,6 +206,7 @@ export const productsAPI =
 
     {
       "id": 7,
+      "q": 1 ,
       "sku": "plum",
       "title": "Plum",
       "description": "1977 Infantil",
@@ -211,6 +221,7 @@ export const productsAPI =
 
     {
       "id": 8,
+      "q": 1 ,
       "sku": "Pomegranate",
       "title": "Pomegranate",
       "description": "",
@@ -225,6 +236,7 @@ export const productsAPI =
 
     {
       "id": 9,
+      "q": 1 ,
       "sku": "strewberry",
       "title": "Strewberry",
       "description": "",
@@ -239,6 +251,7 @@ export const productsAPI =
 
     {
       "id": 10,
+      "q": 1 ,
       "sku": "watermelon",
       "title": "Watermelon",
       "description": "",

@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchProducts } from '../../services/shelf/actions';
-
-// import Spinner from '../Spinner';
-// import ShelfHeader from './ShelfHeader';
 import ProductList from './ProductList';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 
 // import '../Shelf/style.scss';
 
@@ -52,13 +51,19 @@ class Fruits extends Component {
     console.log(products);
     return (
       <React.Fragment>
+        <Element name="products">
           <div id="product" className="products">
             <div className="container">
             <div className="title"><h1>our Products</h1></div>
+            <div className="types">
           <ProductList products={products} />
+          </div>
+          
           <div className="clearfix"></div>
+       
         </div>
         </div>
+        </Element>
       </React.Fragment>
     );
   }
