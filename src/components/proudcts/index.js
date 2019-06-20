@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { fetchProducts } from '../../services/shelf/actions';
+import { fetchProducts } from '../../services/product/actions';
 import ProductList from './ProductList';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
@@ -69,7 +69,7 @@ class Fruits extends Component {
 }
 
 const mapStateToProps = state => ({
-  products: state.shelf.products,
+  products: state.product.products,
   filters: state.filters.items,
   sort: state.sort.type
 });
