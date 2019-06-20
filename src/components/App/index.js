@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css'; 
-import Shelf from '../Shelf';
-import Filter from '../Shelf/Filter';
-import GithubCorner from '../github/Corner';
 import FloatCart from '../FloatCart';
 import Footer from '../footer/footer';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link,  animateScroll as scroll  } from 'react-scroll'
 
 import Slider from '../Slider/Slider';
 import Contact from '../contact/Contact';

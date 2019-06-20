@@ -1,8 +1,18 @@
-import { LOAD_CART, ADD_PRODUCT, REMOVE_PRODUCT } from './actionTypes';
+import { LOAD_CART, ADD_PRODUCT, REMOVE_PRODUCT ,ADD_Q  } from './actionTypes';
+
+export const updateObject = (oldObject, updatedProperties) => {
+  return {
+      ...oldObject,
+      ...updatedProperties
+  };
+};
 
 const initialState = {
-  products: []
+  products: [] ,
+  quantity: 1 
 };
+
+
 
 export default function(state = initialState, action) {
   switch (action.type) {
@@ -21,6 +31,11 @@ export default function(state = initialState, action) {
         ...state,
         productToRemove: Object.assign({}, action.payload)
       };
+      case ADD_Q:
+        return {
+          ...state , 
+          qToAdd:   Object.assign({}, action.payload)
+        }   
     default:
       return state;
   }

@@ -6,8 +6,6 @@ import ProductList from './ProductList';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
-// import '../Shelf/style.scss';
-
 class Fruits extends Component {
   static propTypes = {
     fetchProducts: PropTypes.func.isRequired,
@@ -46,9 +44,10 @@ class Fruits extends Component {
   };
 
   render() {
+    console.log( typeof  this.props.products);
     const { products } = this.props;
     const { isLoading } = this.state;
-    console.log(products);
+
     return (
       <React.Fragment>
         <Element name="products">

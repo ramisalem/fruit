@@ -2,8 +2,8 @@ import React from 'react';
 import '../App.css';
 import axios from 'axios';
 
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-
+import {  Element   } from 'react-scroll'
+import 'font-awesome/css/font-awesome.min.css';
 
 export default class Contact extends React.Component{
     constructor() {
@@ -26,19 +26,23 @@ export default class Contact extends React.Component{
 
     handleClick(e) {
         let data = {
-            name: this.state.name,
+            subject: this.state.Subject,
             email: this.state.email,
-            message: this.state.message
+            text: this.state.message
         }
 
-        axios.post('', data)
+        axios.post('localhost:8001/contact', data)
         .then( res => {
-            this.setState({ sent: true }, this.resetForm());
-            alert("thanks for contacting  us ");
+             
+            console.log(res.data.message);
+            alert("thanks For  Contacing us ")
         })
         .catch( () => {
-          console.log('Message not sent')
+          console.log('Message not sent');
+          alert("massage not sent ");
         })
+
+       
     }
     handleName(event) {
         event.preventDefault();
@@ -81,20 +85,21 @@ render () {
                 <h1 className="title">Contact us</h1>
 
                 <div className="info">
-                    <i className="fas fa-map-marker-alt"></i>
+                   
+                    <i className="fa fa-map-marker" aria-hidden="true"></i>
                     <h2>Address</h2>
                     <h5>10th Abuqir - Alex city</h5>
 
                 </div>
 
                 <div className="info">
-                    <i className="fas fa-phone"></i>
+                    <i className="fa fa-phone"></i>
                     <h2>Phone</h2>
                     <h5>010xxxxxxxxx</h5>
                 </div>
 
                 <div className="info">
-                    <i className="fas fa-envelope"></i>
+                    <i className="fa fa-envelope"></i>
                     <h2>Email</h2>
                     <h5>fruit-market@gmail.com</h5>
                 </div>
@@ -112,16 +117,6 @@ render () {
 
     );
 }
-
-
-
-
-
-
-
-
-
-
 
 
 }

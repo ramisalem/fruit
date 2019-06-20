@@ -4,11 +4,15 @@ import Product from './ProductItem';
 
 
 const ProductList = ({ products }) => {
-  return products.map(p => {
+  
+   console.log(typeof products);
+  return products.map( (p , index )  => {
     return (
         
-    <Product product={p} key={p.id} />
-    
+     <Product product={p} key={index} />
+
+  
+      
     );
   });
 };

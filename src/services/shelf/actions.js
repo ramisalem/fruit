@@ -1,4 +1,4 @@
-import { FETCH_PRODUCTS } from './actionTypes';
+import { FETCH_PRODUCTS , ADD_QU  } from './actionTypes';
 import axios from 'axios';
 
 import { productsAPI } from '../util';
@@ -16,10 +16,11 @@ const compare = {
   }
 };
 
+
+
 export const fetchProducts = (filters, sortBy, callback) => dispatch => {
-  // return axios
-    // .get(productsAPI)
-    // .then(res => {
+  
+
       let { products } =  productsAPI  ;
 
       if (!!filters && filters.length > 0) {
@@ -40,8 +41,28 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
         type: FETCH_PRODUCTS,
         payload: products
       });
-    // })
-    // .catch(err => {
-    //   console.log('Could not fetch products. Try again later.');
-    // });
+   
 };
+
+
+
+export const addQu = ( ) => {
+  return {
+      type: ADD_QU ,
+      payload: {
+        productId: 1 ,  // Peter's ID
+        q: 3
+      }
+  };
+};
+
+
+
+// export function update_q(obj){
+//   return function(dispatch,getState){
+//          let products = getState().products ;
+
+         
+
+//   }
+// }

@@ -8,6 +8,8 @@
     "concurrently": "^4.0.1",
     "cors": "^2.8.5",
     "express": "^4.16.4",
+    "font-awesome": "^4.7.0",
+    "helmet": "^3.18.0",
     "moxios": "^0.4.0",
     "nodemailer": "^6.2.1",
     "react": "^16.6.1",
@@ -22,7 +24,7 @@
   },
   "scripts": {
     "start": "concurrently \"npm run server\" \"react-scripts start\"",
-    "server": "nodemon server/app",
+    "server": "nodemon server/app.js",
     "wdio": "wdio",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -64,5 +66,9 @@
     "wdio-selenium-standalone-service": "0.0.12",
     "wdio-spec-reporter": "^0.1.5",
     "webdriverio": "^4.14.1"
+  } , 
+
+  "engines": {
+    "node": "8.11.4"
   }
 }

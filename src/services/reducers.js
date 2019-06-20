@@ -10,5 +10,5 @@ export default combineReducers({
   cart: cartReducer,
   total: totalReducer,
   filters: filtersReducer,
-  sort: sortReducer
+  sort: sortReducer 
 });
