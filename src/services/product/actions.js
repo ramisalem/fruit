@@ -57,12 +57,3 @@ export const addQu = ( ) => {
 };
 
 
-
-// export function update_q(obj){
-//   return function(dispatch,getState){
-//          let products = getState().products ;
-
-         
-
-//   }
-// }

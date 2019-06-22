@@ -1,10 +1,9 @@
 import React, { Component  , useState } from 'react';
 import '../App.css';
-import axios from 'axios';
 import { connect } from 'react-redux';
 import Thumb from '../Thumb/index';
 import { addProduct   } from '../../services/cart/actions';
-import {  addQu } from '../../services/shelf/actions';
+import {  addQu } from '../../services/product/actions';
 
 
 

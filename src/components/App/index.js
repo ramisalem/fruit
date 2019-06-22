@@ -30,9 +30,9 @@ class App extends Component {
     <Features />
     <About />
      
-          {/* <Shelf /> */}
+     
           <Fruits />
-           
+        
       
         <FloatCart />
         <Contact />
